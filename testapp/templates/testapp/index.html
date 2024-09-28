@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- 下記はindexに突っ込む -->
+<div class="hero-section">
+    <div class="container">
+        <!-- jinja使って表示させる -->
+        <h1>ライコンWebアプリ開発研修へようこそ!</h1>
+        <p>本プロジェクトで色々な技術に触れてみましょう。</p>
+        <a href="https://www.notion.so/var-inc/d4e40d5a8a9548178758c93112c3438f" class="btn btn-primary btn-lg">研修スタート</a>
+    </div>
+</div>
+
+<!-- サービス紹介セクション -->
+<!-- 今回扱う技術を紹介する -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="service-card">
+                <div class="img-container">
+                    <img
+                        src="{{ url_for('static', filename='images/git_logo.png') }}" alt="Git"
+                        style="height: 150px; width: 150p;"
+                    >
+                </div>
+                <h4>Git</h4>
+                <p>ソースコードや変更履歴を管理するために使われる、代表的な分散型バージョン管理システムです。
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-card">
+                <div class="img-container">
+                    <img
+                        src="{{ url_for('static', filename='images/github_logo.png') }}" alt="GitHub"
+                        style="height: 220px; width: 150p;"
+                    >
+                </div>
+                <h4>GitHub</h4>
+                <p>Gitの仕組みを利用したウェブ上のバージョン管理サービスです。
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-card">
+                <div class="img-container">
+                    <img
+                        src="{{ url_for('static', filename='images/vscode_logo.png') }}" alt="Visual Studio Code"
+                        style="height: 120px; width: 150p;"
+                    >
+                </div>
+                <h4>Visual Studio Code</h4>
+                <p>ソースコードの編集を主な目的としたテキストエディタです。
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-card">
+                <div class="img-container">
+                    <img
+                        src="{{ url_for('static', filename='images/html_css_js_logo.png') }}" alt="HTML/CSS/JS"
+                        style="height: 150px; width: 150p;"
+                    >
+                </div>
+                <h4>HTML/CSS/JS</h4>
+                <p>フロント開発において基本的なプログラミング言語です。</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-card">
+                <div class="img-container">
+                    <img
+                        src="{{ url_for('static', filename='images/python_logo.png') }}" alt="Python"
+                        style="height: 150px; width: 150p;"
+                    >
+                </div>
+                <h4>Python</h4>
+                <p>バックエンド開発において利用され、初心者にも扱いやすいプログラミング言語です。
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-card">
+                <div class="img-container">
+                    <img
+                        src="{{ url_for('static', filename='images/flask_logo.png') }}" alt="Flask"
+                        style="height: 150px; width: 150p;"
+                    >
+                </div>
+                <h4>Flask</h4>
+                <p>簡易的なWebアプリを作成する際に適したPythonのWebフレームワークです。
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='javascript/sample.js') }}"></script>
+{% endblock %}

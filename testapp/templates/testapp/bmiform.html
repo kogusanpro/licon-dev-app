@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center">BMI診断フォーム</h2>
+
+    <form id="bmiForm" class="mt-4">
+        <div class="mb-3">
+            <label for="height" class="form-label">身長 (cm)</label>
+            <input type="number" class="form-control" id="height" placeholder="例: 170" required>
+        </div>
+        <div class="mb-3">
+            <label for="weight" class="form-label">体重 (kg)</label>
+            <input type="number" class="form-control" id="weight" placeholder="例: 65" required>
+        </div>
+        <button type="submit" class="btn btn-primary">BMIを計算</button>
+    </form>
+
+    <div class="mt-4">
+        <h3>結果:</h3>
+        <p id="bmiResult"></p>
+        <p id="diagnosis"></p>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='javascript/sample.js') }}"></script>
+{% endblock %}

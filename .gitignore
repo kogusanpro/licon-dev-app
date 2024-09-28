@@ -1,0 +1,89 @@
+# Byte-compiled Python files
+############################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+#####################
+venv/
+ENV/
+env/
+venv.bak/
+
+# Flask config and instance folders
+###################################
+instance/
+config.py
+config.pyc
+*.sqlite3
+*.db
+
+# Static files
+##############
+static/*
+!static/.keep  # Keep this to track the folder in Git
+
+# Logs and database
+###################
+*.log
+*.db
+*.sqlite3
+*.db-journal
+*.pid
+
+# Flask specific logs and settings
+##################################
+flask_session/
+flask_debug.log
+
+# Node.js (if using for frontend)
+#################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# JavaScript/Frontend files
+###########################
+dist/
+build/
+*.min.js
+*.map
+
+# CSS/Frontend files
+####################
+*.css.map
+*.css
+*.sass-cache/
+
+# Flask-SQLAlchemy migrations (if using)
+########################################
+migrations/
+
+# Static analysis and testing tools
+###################################
+coverage/
+*.cover
+*.coverage
+nosetests.xml
+pylint.log
+pytest_cache/
+.cache
+
+# Environment variables
+#######################
+.env
+*.env
+
+# Operating system files
+########################
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+####################
+.vscode/
+.idea/
+*.iml
