@@ -15,7 +15,6 @@ venv.bak/
 # Flask config and instance folders
 ###################################
 instance/
-config.py
 config.pyc
 *.sqlite3
 *.db
