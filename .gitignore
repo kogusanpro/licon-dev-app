@@ -54,7 +54,6 @@ build/
 # CSS/Frontend files
 ####################
 *.css.map
-*.css
 *.sass-cache/
 
 # Flask-SQLAlchemy migrations (if using)
